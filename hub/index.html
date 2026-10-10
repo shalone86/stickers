@@ -1,158 +1,166 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Scriptorium — Catholic Art, Prayer &amp; Music</title>
-<meta name="description" content="Prayer, art, study and music rooted in the Catholic tradition. Free, and made by hand. One place for everything from SD Cason and Methodius Media.">
-<meta property="og:title" content="The Scriptorium — Catholic Art, Prayer & Music">
-<meta property="og:description" content="Everything I make, in one place: the Illuminated Rosary, a free Catholic gallery, a sketchbook for learning the faith, and prayer-inspired music.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#f4ecd8; --bg2:#ece1c4; --card:#fbf6e8; --ink:#2b2118; --muted:#6b5a45;
-  --gold:#a8791f; --gold-soft:#d9b867; --red:#7a1f1f; --line:#d8c89f;
-  --shadow:0 1px 0 #fff8 inset,0 10px 30px -14px #4a361a66;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#17120d; --bg2:#1e1812; --card:#241d15; --ink:#efe4cc; --muted:#b3a287;
-    --gold:#d9b867; --gold-soft:#8a6a24; --red:#d98a7a; --line:#3d3022;
-    --shadow:0 10px 30px -14px #000a;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#17120d; --bg2:#1e1812; --card:#241d15; --ink:#efe4cc; --muted:#b3a287;
-  --gold:#d9b867; --gold-soft:#8a6a24; --red:#d98a7a; --line:#3d3022;
-  --shadow:0 10px 30px -14px #000a;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; background:var(--bg); color:var(--ink);
-  font:19px/1.55 "EB Garamond",Georgia,serif;
-  background-image:radial-gradient(ellipse at top,var(--bg2),transparent 60%);
-}
-a{color:inherit}
-.wrap{max-width:720px;margin:0 auto;padding:0 16px}
-header{text-align:center;padding:56px 0 28px}
-.cross{width:34px;height:34px;color:var(--gold)}
-h1{font:600 clamp(2.2rem,8vw,3.4rem)/1.05 "Cormorant Garamond",Georgia,serif;margin:10px 0 6px;letter-spacing:.01em}
-.tag{font-style:italic;color:var(--muted);max-width:30em;margin:0 auto}
-.rule{display:flex;align-items:center;gap:12px;color:var(--gold);margin:26px auto 6px;max-width:320px}
-.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-soft),transparent)}
-.rule span{font-size:.8rem}
-main{display:grid;gap:18px;padding:12px 0 8px}
-.card{
-  position:relative; display:block; text-decoration:none;
-  background:var(--card); border:1px solid var(--line); border-radius:6px;
-  padding:22px 22px 20px 92px; box-shadow:var(--shadow);
-  transition:transform .15s,border-color .15s;
-}
-.card::before{ /* illuminated frame */
-  content:""; position:absolute; inset:5px; border:1px solid var(--gold-soft);
-  border-radius:3px; opacity:.45; pointer-events:none;
-}
-.card:hover,.card:focus-within{transform:translateY(-2px);border-color:var(--gold)}
-.card .go::after{content:"";position:absolute;inset:0;z-index:1}
-.go:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-.initial{
-  position:absolute; left:20px; top:20px; width:56px; height:56px;
-  display:grid; place-items:center;
-  font:600 2.6rem/1 "Cormorant Garamond",serif; color:var(--red);
-  background:linear-gradient(145deg,#fff3 ,transparent),var(--bg2);
-  border:2px solid var(--gold); border-radius:3px;
-  box-shadow:0 0 0 3px var(--card),0 0 0 4px var(--gold-soft);
-}
-.card h2{font:600 1.55rem/1.15 "Cormorant Garamond",serif;margin:0 0 2px}
-.pitch{font-style:italic;color:var(--gold);margin:0 0 8px;font-weight:500}
-.card p.desc{margin:0 0 14px;color:var(--muted);font-size:1rem;line-height:1.5}
-.go{text-decoration:none;display:inline-block;font:600 .8rem/1 "EB Garamond",serif;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--bg);background:var(--red);padding:10px 16px;border-radius:2px}
-:root[data-theme="dark"] .go{color:#17120d}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .go{color:#17120d}}
-.url{display:block;margin-top:10px;font-size:.82rem;color:var(--muted);letter-spacing:.04em}
-.aside{margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:.95rem;color:var(--muted)}
-.aside a{color:var(--red);text-decoration-thickness:1px;text-underline-offset:3px;font-weight:500;position:relative;z-index:2}
-.listen{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px;padding:0;list-style:none}
-.listen li{font-size:.85rem;border:1px solid var(--gold-soft);border-radius:99px;padding:3px 12px;color:var(--ink)}
-.support{text-align:center;margin:30px 0 8px;padding:22px 18px;border:1px solid var(--line);border-radius:6px;background:var(--bg2)}
-.support h3{font:600 1.4rem "Cormorant Garamond",serif;margin:0 0 4px}
-.support p{margin:0 0 12px;color:var(--muted);font-size:1rem}
-.support a.go{text-decoration:none}
-footer{text-align:center;color:var(--muted);font-size:.9rem;padding:26px 0 48px}
-footer em{display:block;margin-top:6px}
-@media (max-width:480px){
-  .card{padding:20px 18px 18px}
-  .initial{position:static;margin-bottom:12px}
-}
-@media (prefers-reduced-motion:reduce){.card{transition:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Scriptorium — Pray, see, read and listen</title>
+  <meta name="description" content="Four free Catholic projects in one place: the Illuminated Rosary, the Free Catholic Gallery, the Catholic Sketchbook and Cyril & Methodius Media.">
+  <meta name="theme-color" content="#0d0b09">
+  <meta property="og:title" content="The Scriptorium">
+  <meta property="og:description" content="Pray, see, read and listen. Four free Catholic projects in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/rosary.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0b09'/%3E%3Cpath d='M16 5v22M9 12h14' stroke='%23d4b06a' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <!-- Same self-hosted fonts as methodius.media: no third-party requests. -->
+  <link rel="preload" href="fonts/cormorant-garamond.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face { font-family: "Cinzel"; font-weight: 400 900; font-display: swap; src: url("fonts/cinzel.woff2") format("woff2"); }
+    @font-face { font-family: "Cormorant Garamond"; font-weight: 300 700; font-display: swap; src: url("fonts/cormorant-garamond.woff2") format("woff2"); }
+    @font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 300 700; font-display: swap; src: url("fonts/cormorant-garamond-italic.woff2") format("woff2"); }
+
+    /* Palette shared with the Illuminated Rosary. */
+    :root {
+      --bg: #0d0b09;
+      --panel: #1a1612;
+      --ink: #f3ead8;
+      --ink-soft: #c9bda6;
+      --ink-faint: #8a7f6d;
+      --gold: #d4b06a;
+      --line: rgba(243, 234, 216, .14);
+      --serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+      --caps: "Cinzel", "Trajan Pro", Georgia, serif;
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      font: 18px/1.45 var(--serif);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap {
+      max-width: 960px; margin: 0 auto;
+      padding: calc(env(safe-area-inset-top, 0px) + 56px) 16px calc(env(safe-area-inset-bottom, 0px) + 40px);
+    }
+
+    header { text-align: center; margin: 0 auto 36px; max-width: 34em; }
+    .mark { color: var(--gold); font-size: 22px; line-height: 1; margin: 0 0 16px; }
+    .eyebrow {
+      font-family: var(--caps); font-size: 11px; letter-spacing: .3em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 10px;
+    }
+    h1 { font-weight: 500; font-size: clamp(38px, 10vw, 56px); line-height: 1.02; margin: 0 0 12px; letter-spacing: .01em; }
+    .sub { font-style: italic; font-size: 20px; color: var(--ink-soft); margin: 0; }
+
+    .grid { display: grid; gap: 14px; list-style: none; margin: 0; padding: 0; }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+      .tile { aspect-ratio: 4 / 3; max-height: none; }
+    }
+
+    .tile {
+      position: relative; display: flex; flex-direction: column; justify-content: flex-end;
+      aspect-ratio: 1 / 1; max-height: 440px; width: 100%; padding: 20px; border-radius: 14px; overflow: hidden;
+      background: var(--panel); border: 1px solid var(--line);
+      color: inherit; text-decoration: none; isolation: isolate;
+      text-shadow: 0 1px 12px rgba(0,0,0,.6);
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+    }
+    .tile img {
+      position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+      z-index: -2; transition: transform .6s ease;
+    }
+    .tile::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(180deg, rgba(10,8,6,0) 28%, rgba(10,8,6,.72) 56%, rgba(10,8,6,.96) 82%);
+    }
+    .tile:hover, .tile:focus-visible {
+      border-color: var(--gold); outline: none;
+      box-shadow: 0 0 0 1px var(--gold), 0 10px 34px rgba(212,176,106,.18);
+    }
+    .tile:hover img, .tile:focus-visible img { transform: scale(1.04); }
+    .tile:active { transform: scale(.99); }
+
+    .verb {
+      font-family: var(--caps); font-size: 11px; letter-spacing: .3em;
+      text-transform: uppercase; color: var(--gold); margin: 0 0 6px;
+    }
+    .tile h2 { font-size: 28px; font-weight: 600; line-height: 1.08; margin: 0 0 4px; }
+    .tile p.line { font-size: 18px; line-height: 1.3; color: var(--ink-soft); margin: 0 0 12px; max-width: 26em; }
+    .go {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      padding-top: 10px; border-top: 1px solid var(--line);
+      font-family: var(--caps); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--ink);
+    }
+    .go .url { font-family: var(--serif); font-size: 15px; letter-spacing: .02em; text-transform: none; color: var(--ink-faint); }
+    .go .arrow { color: var(--gold); transition: transform .2s; }
+    .tile:hover .arrow, .tile:focus-visible .arrow { transform: translateX(3px); }
+
+    /* Narrow phones: let the tile grow to fit the text. */
+    @media (max-width: 340px) { .tile { aspect-ratio: auto; min-height: 320px; } }
+
+    footer { text-align: center; margin-top: 40px; color: var(--ink-faint); }
+    footer p { margin: 0 0 6px; font-style: italic; }
+    footer .amdg { font-family: var(--caps); font-style: normal; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
+
+    @media (prefers-reduced-motion: reduce) { .tile, .tile img, .go .arrow { transition: none; } }
+  </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <svg class="cross" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2v20M6 8h12" stroke-linecap="round"/><circle cx="12" cy="8" r="1.6" fill="currentColor"/></svg>
-    <h1>The Scriptorium</h1>
-    <p class="tag">Prayer, art, study and music from the Catholic tradition, East and West. Free, and made by hand.</p>
-    <div class="rule"><span>✠</span></div>
-  </header>
+  <div class="wrap">
+    <header>
+      <p class="mark" aria-hidden="true">✝</p>
+      <p class="eyebrow">Free · Human-made · No accounts</p>
+      <h1>The Scriptorium</h1>
+      <p class="sub">Four quiet places to pray, see, read and listen in the Catholic tradition.</p>
+    </header>
 
-  <main>
-    <article class="card">
-      <div class="initial" aria-hidden="true">R</div>
-      <h2>Illuminated Rosary</h2>
-      <p class="pitch">Pray the rosary with illuminated art.</p>
-      <p class="desc">The rosary and other chaplets, with a classic sacred painting for every prayer and hymns and instrumentals to pray along to.</p>
-      <a class="go" href="https://illuminatedrosary.com">Pray</a>
-      <span class="url">illuminatedrosary.com</span>
-    </article>
+    <ul class="grid">
+      <li>
+        <a class="tile" href="https://illuminatedrosary.com">
+          <img src="img/rosary.webp" alt="" width="960" height="720">
+          <p class="verb">Pray</p>
+          <h2>The Illuminated Rosary</h2>
+          <p class="line">A sacred painting for every prayer, with hymns to pray along to.</p>
+          <span class="go"><span>Begin <span class="arrow">→</span></span><span class="url">illuminatedrosary.com</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tile" href="https://sdcason.com">
+          <img src="img/gallery.webp" alt="" width="960" height="720" loading="lazy">
+          <p class="verb">See</p>
+          <h2>The Free Catholic Gallery</h2>
+          <p class="line">Public domain paintings, coloring pages and photos, free for anyone.</p>
+          <span class="go"><span>Browse <span class="arrow">→</span></span><span class="url">sdcason.com</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tile" href="https://catholicsketchbook.com">
+          <img src="img/sketchbook.webp" alt="" width="960" height="720" loading="lazy">
+          <p class="verb">Read</p>
+          <h2>The Catholic Sketchbook</h2>
+          <p class="line">Encyclicals, Fathers and saints a little at a time. Sketch to remember.</p>
+          <span class="go"><span>Start reading <span class="arrow">→</span></span><span class="url">catholicsketchbook.com</span></span>
+        </a>
+      </li>
+      <li>
+        <a class="tile" href="https://methodius.media">
+          <img src="img/music.webp" alt="" width="960" height="720" loading="lazy">
+          <p class="verb">Listen</p>
+          <h2>Cyril &amp; Methodius Media</h2>
+          <p class="line">Lofi, chapel pop and ambient music on the prayers of East and West.</p>
+          <span class="go"><span>Listen <span class="arrow">→</span></span><span class="url">methodius.media</span></span>
+        </a>
+      </li>
+    </ul>
 
-    <article class="card">
-      <div class="initial" aria-hidden="true">G</div>
-      <h2>The Gallery</h2>
-      <p class="pitch">Sacred art, free to print, color and share.</p>
-      <p class="desc">A growing collection of Catholic paintings, coloring pages and stock photos, exclusively Christian subjects, for parishes, classrooms and homes.</p>
-      <a class="go" href="https://sdcason.com">Browse the gallery</a>
-      <span class="url">sdcason.com</span>
-      <div class="aside">Free for everyone. <a href="support.html?for=gallery">Help keep these free →</a></div>
-    </article>
-
-    <article class="card">
-      <div class="initial" aria-hidden="true">S</div>
-      <h2>Catholic Sketchbook</h2>
-      <p class="pitch">Learn the faith by reading, highlighting and sketching.</p>
-      <p class="desc">A library of sketchbooks that slow you down: read the text, mark what strikes you, and draw it into memory.</p>
-      <a class="go" href="https://catholicsketchbook.com">Open the library</a>
-      <span class="url">catholicsketchbook.com</span>
-      <div class="aside">Always free. <a href="support.html?for=sketchbook">Support this work</a></div>
-    </article>
-
-    <article class="card">
-      <div class="initial" aria-hidden="true">M</div>
-      <h2>Methodius Media</h2>
-      <p class="pitch">Music drawn from the prayers of East and West.</p>
-      <ul class="listen" aria-label="Styles">
-        <li>Catholic Lofi</li><li>Chapel Pop</li><li>Ambient</li>
-      </ul>
-      <p class="desc">Free songs built on the prayer traditions of the Eastern and Western Church. For study, for the commute, for the quiet hour.</p>
-      <a class="go" href="https://methodius.media">Listen</a>
-      <span class="url">methodius.media</span>
-    </article>
-  </main>
-
-  <section class="support">
-    <h3>Keep it free</h3>
-    <p>Everything here is free to use. If it has helped your prayer, your classroom or your home, you can help keep it that way.</p>
-    <a class="go" href="support.html">Support this work</a>
-  </section>
-
-  <footer>
-    <div>✠ &nbsp; Ad maiorem Dei gloriam &nbsp; ✠</div>
-    <em>Made with love for the Church.</em>
-  </footer>
-</div>
+    <footer>
+      <p>Made by hand, given away freely.</p>
+      <p class="amdg">Ad Maiorem Dei Gloriam</p>
+    </footer>
+  </div>
 </body>
 </html>
