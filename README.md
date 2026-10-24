@@ -1,6 +1,6 @@
 # The Scriptorium (hub page)
 
-One static page that points to the four sites. No build step, no scripts, no
+One static page that points to the six sites. No build step, no scripts, no
 third-party requests, and it collects no visitor data.
 
 - `index.html`: the page, with all CSS inline.
@@ -15,7 +15,9 @@ third-party requests, and it collects no visitor data.
 | `rosary.webp` | *The Annunciation*, Albert Bouts, 1480 (Illuminated Rosary cover, via sdcason.com) | Public domain |
 | `gallery.webp` | *The Nativity* triptych, centre panel (sdcason.com) | Public domain |
 | `sketchbook.webp` | Rerum Novarum §7 sketch from catholicsketchbook.com, recoloured light-on-dark | Own work |
+| `courses.webp` | Course cover emblem from courses.sdcason.com, recoloured gold-on-dark | Own work |
 | `music.webp` | `hero.jpg` from the methodius.media repo | Same as the Methodius site |
+| `kids.webp` | *Jesus Is Lord* video thumbnail from kids.sdcason.com, cropped | Own work |
 
 ## Hosting
 
