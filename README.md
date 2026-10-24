@@ -1,4 +1,4 @@
-# The Scriptorium (hub page)
+# Free Catholic Media (hub page)
 
 One static page that points to the six sites. No build step, no scripts, no
 third-party requests, and it collects no visitor data.
@@ -15,7 +15,7 @@ third-party requests, and it collects no visitor data.
 | `rosary.webp` | *The Annunciation*, Albert Bouts, 1480 (Illuminated Rosary cover, via sdcason.com) | Public domain |
 | `gallery.webp` | *The Nativity* triptych, centre panel (sdcason.com) | Public domain |
 | `sketchbook.webp` | Rerum Novarum §7 sketch from catholicsketchbook.com, recoloured light-on-dark | Own work |
-| `courses.webp` | Course cover emblem from courses.sdcason.com, recoloured gold-on-dark | Own work |
+| `courses.webp` | Gold ring with the Lucide `book-open` icon | Lucide icons, ISC license |
 | `music.webp` | `hero.jpg` from the methodius.media repo | Same as the Methodius site |
 | `kids.webp` | *Jesus Is Lord* video thumbnail from kids.sdcason.com, cropped | Own work |
 
