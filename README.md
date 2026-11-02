@@ -17,7 +17,7 @@ third-party requests, and it collects no visitor data.
 | `sketchbook.webp` | Rerum Novarum §7 sketch from catholicsketchbook.com, recoloured light-on-dark | Own work |
 | `courses.webp` | Gold ring with the Lucide `book-open` icon | Lucide icons, ISC license |
 | `music.webp` | `hero.jpg` from the methodius.media repo | Same as the Methodius site |
-| `kids.webp` | *Jesus Is Lord* video thumbnail from kids.sdcason.com, cropped | Own work |
+| `kids.webp` | *Jesus Is Lord* video thumbnail from kids.methodiusmedia.com (Free Catholic Kids), cropped | Own work |
 
 ## Hosting
 
