@@ -5,6 +5,8 @@
 const REDIRECTS = {
   'www.methodiusmedia.com': 'https://methodiusmedia.com',
   'gallery.methodiusmedia.com': 'https://sdcason.com',
+  'courses.sdcason.com': 'https://courses.methodiusmedia.com',
+  'kids.sdcason.com': 'https://kids.methodiusmedia.com',
   'rosary.methodiusmedia.com': 'https://illuminatedrosary.org',
   'illuminatedrosary.com': 'https://illuminatedrosary.org',
   'www.illuminatedrosary.com': 'https://illuminatedrosary.org',
