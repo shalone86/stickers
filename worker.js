@@ -5,9 +5,9 @@
 const REDIRECTS = {
   'www.methodiusmedia.com': 'https://methodiusmedia.com',
   'gallery.methodiusmedia.com': 'https://sdcason.com',
-  'rosary.methodiusmedia.com': 'https://illuminatedrosary.com',
-  'illuminatedrosary.org': 'https://illuminatedrosary.com',
-  'www.illuminatedrosary.org': 'https://illuminatedrosary.com',
+  'rosary.methodiusmedia.com': 'https://illuminatedrosary.org',
+  'illuminatedrosary.com': 'https://illuminatedrosary.org',
+  'www.illuminatedrosary.com': 'https://illuminatedrosary.org',
 };
 
 // Files that belong to the hub. Anything else on methodiusmedia.com is an old
