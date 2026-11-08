@@ -14,7 +14,7 @@ const REDIRECTS = {
 
 // Files that belong to the hub. Anything else on methodiusmedia.com is an old
 // link from when it mirrored the music site, so it goes to methodius.media.
-const HUB_PATHS = /^\/(index\.html|robots\.txt|img\/[\w-]+\.webp|fonts\/[\w-]+\.woff2)?$/;
+const HUB_PATHS = /^\/(index\.html|robots\.txt|sitemap\.xml|img\/[\w-]+\.webp|fonts\/[\w-]+\.woff2)?$/;
 
 // methodiusmedia.com used to serve the music site's service worker. This
 // replacement clears its caches and unregisters it for returning visitors.

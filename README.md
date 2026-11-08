@@ -15,9 +15,9 @@ third-party requests, and it collects no visitor data.
 | `rosary.webp` | *The Annunciation*, Albert Bouts, 1480 (Illuminated Rosary cover, via sdcason.com) | Public domain |
 | `gallery.webp` | *The Nativity* triptych, centre panel (sdcason.com) | Public domain |
 | `sketchbook.webp` | Rerum Novarum §7 sketch from catholicsketchbook.com, recoloured light-on-dark | Own work |
-| `courses.webp` | Gold ring with the Lucide `book-open` icon | Lucide icons, ISC license |
+| `courses.webp` | *Saint Matthew Writing His Gospel*, Carlo Dolci, c. 1670s, cropped ([sdcason.com](https://sdcason.com/saint-matthew-writing-his-gospel-by-carlo-dolci-about-1670s-public-domain-catholic-painting/)) | Public domain |
 | `music.webp` | `hero.jpg` from the methodius.media repo | Same as the Methodius site |
-| `kids.webp` | *Jesus Is Lord* video thumbnail from kids.sdcason.com, cropped | Own work |
+| `kids.webp` | *The Madonna and Child with the Infant Saint John the Baptist*, Pompeo Batoni, 18th century, cropped ([sdcason.com](https://sdcason.com/the-madonna-and-child-with-the-infant-saint-john-the-baptist-1708-1787-italian-by-pompeo-batoni-public-domain-catholic-painting/)) | Public domain |
 
 ## Hosting
 
