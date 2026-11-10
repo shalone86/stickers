@@ -107,6 +107,9 @@
 
     footer { text-align: center; margin-top: 40px; color: var(--ink-faint); }
     footer p { margin: 0 0 6px; font-style: italic; }
+    footer .books { margin-bottom: 18px; }
+    footer .books a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid rgba(212,176,106,.4); }
+    footer .books a:hover, footer .books a:focus-visible { color: var(--gold); border-color: var(--gold); }
     footer .amdg { font-family: var(--caps); font-style: normal; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); }
 
     @media (prefers-reduced-motion: reduce) { .tile, .tile img, .go .arrow { transition: none; } }
@@ -179,6 +182,7 @@
     </ul>
 
     <footer>
+      <p class="books">Prefer paper? Our illustrated prayer books are at <a href="https://casoncatholic.com">casoncatholic.com</a>.</p>
       <p>Made by hand, given away freely.</p>
       <p class="amdg">Ad Maiorem Dei Gloriam</p>
     </footer>
